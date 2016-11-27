@@ -3,11 +3,10 @@
 
 <head>
     <title>Dashboard</title>
-    <link rel="stylesheet" href="/css/bootstrap.min.css">
     <script src="/js/dashboard.js"></script>
-    <link rel="stylesheet" href="/bower_components/materialize/dist/css/materialize.min.css">
     <link rel="stylesheet" href="/css/index.css">
     <script src="https://www.gstatic.com/firebasejs/3.6.1/firebase.js"></script>
+    <script src="/bower_components/jquery/dist/jquery.min.js"></script>
     <script>
         // Initialize Firebase
         var config = {
@@ -59,22 +58,8 @@
                         </tr>
                     </thead>
 
-                    <tbody>
-                        <tr>
-                            <td>0</td>
-                            <td>0/4</td>
-                            <td><a class="waves-effect waves-light btn">join</a></td>
-                        </tr>
-                        <tr>
-                            <td>1</td>
-                            <td>0/4</td>
-                            <td><a class="waves-effect waves-light btn">join</a></td>
-                        </tr>
-                        <tr>
-                            <td>2</td>
-                            <td>0/4</td>
-                            <td><a class="waves-effect waves-light btn">join</a></td>
-                        </tr>
+                    <tbody id="rounds">
+
                     </tbody>
                 </table>
             </div>
