@@ -11,4 +11,8 @@ public class RoundInfo {
         this.id = id;
         this.players = players;
     }
+
+    public void join() {
+        if (players <= 4) players++;
+    }
 }
