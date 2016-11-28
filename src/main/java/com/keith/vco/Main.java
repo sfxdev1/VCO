@@ -26,6 +26,10 @@ public class Main {
             staticFiles.location("/public");
         }
         get("/round_info", (request, response) -> gson.toJson(Capsule.encapsulate(r)));
+        get("/join_round/:id", ((request, response) -> {
+            Rounds.getInstance().join(Integer.valueOf(request.params("id")));
+            return null;
+        }));
         redirect.get("/","/index.html");
 
     }
