@@ -1,3 +1,4 @@
+//TODO: Convert this and all other js files to angular 1 or 2 (still deciding)
 var userObj;
 var authenticated = false;
 String.prototype.format = function () {
